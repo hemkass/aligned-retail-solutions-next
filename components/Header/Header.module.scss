@@ -1,0 +1,57 @@
+@import "./styles/variables.scss";
+
+.header {
+ position: -webkit-sticky;
+position: sticky;
+top: 0px;
+  height: 10vh;
+  width: 100vw;
+ background-color:$white;
+  padding-left: 50px;
+  padding-top:15px;
+  display: flex;
+  align-items:center;
+  gap: 50px;
+
+  div {
+    height: max-content;
+   margin: auto 0 auto 0; 
+    font-family: "Maitree", serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 1.1em;
+  }
+  .logo {
+    width: 8%;
+    img {object-fit:scale;}
+  }
+
+  .MenuDiv {
+    display: flex;
+    gap: 20px;
+
+    h2 {
+    font-family: "Maitree", serif;
+  font-size:20px;font-weight:100; line-height:10px;}
+
+  }
+
+
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+  .menuContactDiv {height:max-content;
+   padding: 0px 10px 0px 10px; 
+    border: 3px double $color1;
+      h2 {  font-weight: 500;
+ 
+    color: $color1;
+  
+
+  }
+  
+
+  }
+}
+
