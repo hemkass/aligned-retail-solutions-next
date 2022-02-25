@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
+import styles from "../styles/Contact.module.scss";
 
 const Contact = () => {
   const [firstname, setFirstname] = useState("");
@@ -14,14 +15,13 @@ const Contact = () => {
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Contact Aligned Retail Solutions</title>
-    
       </Head>
-      <div className="form-div">
-        <div className="form-left-div">
+      <div className={styles.contact}>
+        <div className={styles.formLeft}>
           <h1>NEED HELP WITH YOUR SUPPLY CHAIN?</h1>{" "}
         </div>
         <form>
-          <div className="form-data-div">
+          <div className={styles.dataDiv}>
             <input
               onChange={(event) => setFirstname(event.target.value)}
               type="text"
@@ -35,8 +35,7 @@ const Contact = () => {
               value={lastname}
             ></input>
           </div>
-          <div className="info">
-            {" "}
+          <div>
             <input
               required="required"
               onChange={(event) => setEmail(event.target.value)}
@@ -52,17 +51,17 @@ const Contact = () => {
             ></input>
           </div>
           <textarea
-            className="form-message"
+            className={styles.messageBox}
             required="required"
             onChange={(event) => setMess(event.target.value)}
             type="text"
             placeholder="Your Message"
             value={mess}
           ></textarea>
-          <div className="submit-button">
+          <div className={styles.submitButton}>
             <button>Send message</button>
           </div>
-          <div className="submit-button"></div>
+          <div className={styles.submitButton}></div>
         </form>
       </div>
     </>

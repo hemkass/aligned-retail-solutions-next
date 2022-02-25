@@ -1,0 +1,94 @@
+@import "./variables.scss";
+
+.contact {
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 150px;
+
+  .formLeft {
+    padding-left: 20%;
+    display: flex;
+    width: 50%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .dataDiv {
+      display: flex;
+      gap: 50px;
+    }
+
+    .messageBox {
+      width: 80%;
+      height: 150px;
+      max-width: 600px;
+    }
+
+    input {
+      height: 50px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      background-color: transparent;
+      border-bottom: solid thin $grey1;
+      font-family: "Prompt", sans-serif;
+      font-weight: 600;
+      font-size: 17px;
+
+      &::placeholder {
+        font-family: "Prompt", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        padding-left: 15px;
+        padding-top: 5px;
+      }
+    }
+
+    textarea {
+      font-family: "Prompt", sans-serif;
+      font-weight: 600;
+      background-color: transparent;
+      border: solid thin $grey1;
+      font-size: 17px;
+
+      &::placeholder {
+        font-family: "Prompt", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        padding: 15px;
+      }
+    }
+
+    .submitButton {
+      /*  margin-bottom: 100px; */
+      display: flex;
+      justify-content: flex-start;
+      width: 80%;
+      text-align: left;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 50px;
+        text-align: center;
+        background: $black;
+        color: $white;
+        border-radius: 3px;
+        font-family: "Prompt", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+      }
+      button:hover {
+        background: $grey2;
+      }
+    }
+  }
+}

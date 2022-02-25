@@ -9,76 +9,82 @@ const Accueil = () => {
   return (
     <>
       <div className={styles.homeSliderDiv}>
-        <div className={styles.Title}>
-          <h1>NEED HELP WITH YOUR SUPPLY CHAIN?</h1>
-        </div>
         <div className={styles.BackgroundImage}>
-          {/*  <img
-        src="https://res.cloudinary.com/dyj84szrx/image/upload/v1642417376/ricky/fatigu%C3%A92_xx7mr4.jpg"
-        alt=""
-      /> */}
+          {" "}
+          <div className={styles.Title}>
+            <h1>NEED HELP WITH YOUR SUPPLY CHAIN?</h1>
+          </div>
+          <Image
+            className={styles.background}
+            src="https://res.cloudinary.com/dyj84szrx/image/upload/v1642417376/ricky/fatigu%C3%A92_xx7mr4.jpg"
+            alt=""
+            width="16"
+            height="6"
+            layout="fill"
+          />
         </div>
+        <div /* className={styles.BackgroundImage} */></div>
       </div>{" "}
       <div className={styles.contact}>
         <div className={styles.questions}>
           <div className={styles.leftQuestion}>
-            <p>
+            <h4>
               <FontAwesomeIcon
                 className={styles.chevronRight}
                 icon="chevron-right"
               />
               Tired of retail chargebacks?
-            </p>
-            <p>
+            </h4>
+            <h4>
               {" "}
               <FontAwesomeIcon
                 className={styles.chevronRight}
                 icon="chevron-right"
               />
               Too many late deliveries?
-            </p>
-            <p>
+            </h4>
+            <h4>
               {" "}
               <FontAwesomeIcon
                 className={styles.chevronRight}
                 icon="chevron-right"
               />
               Lack of visibility?
-            </p>
+            </h4>
           </div>
           <div>
-            <p>
+            <h4>
               {" "}
               <FontAwesomeIcon
                 className={styles.chevronRight}
                 icon="chevron-right"
               />
               Skyrocketing freight charges?
-            </p>
-            <p>
+            </h4>
+            <h4>
               {" "}
               <FontAwesomeIcon
                 className={styles.chevronRight}
                 icon="chevron-right"
               />
               Problems with damaged freight?
-            </p>
-            <p>
+            </h4>
+            <h4>
               {" "}
               <FontAwesomeIcon
-                cclassName={styles.chevronRight}
+                className={styles.chevronRight}
                 icon="chevron-right"
               />
               Need to find a new carrier/3PL?
-            </p>
-            <p>
+            </h4>
+            <h4>
               {" "}
               <FontAwesomeIcon
                 className={styles.chevronRight}
                 icon="chevron-right"
               />
               Frustrated with retail routing guide compliance?
-            </p>
+            </h4>
           </div>
         </div>
         <div className={styles.contactText}>

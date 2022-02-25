@@ -1,17 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-
+import styles from "../styles/Home.module.scss";
 const Process = () => {
-  const [document, setDocument] = useState(null);
+  const [_document, set_document] = useState(null);
 
   useEffect(() => {
-    setDocument(document);
+    set_document(document);
   }, []);
-  console.log(document);
 
-  /*  const items = document.getElementsByClassName("Process");
-  
+  if (_document) {
+    const items = _document.getElementsByClassName(`${styles.Process}`);
+    console.log(items);
+  }
+
   let count = 0;
   const handleNext = (event) => {
     console.log(count);
@@ -50,130 +52,133 @@ const Process = () => {
         inline: "nearest",
       });
     }
-  }; */
+  };
 
   return (
-    <div className="div4">
-      <div className="bloc">
-        {/*    <div className="prev-icon-div" onClick={handlePrev}>
-          <FontAwesomeIcon className="prev-icon" icon="arrow-alt-circle-left" />
-        </div>
-        <div className="next-icon-div" onClick={handleNext}>
+    <>
+      <h1>Our Process :</h1>
+      <div className={styles.bloc}>
+        <div onClick={handlePrev}>
           <FontAwesomeIcon
-            className="next-icon"
+            className={styles.prevIcon}
+            icon="arrow-alt-circle-left"
+          />
+        </div>
+        <div onClick={handleNext}>
+          <FontAwesomeIcon
+            className={styles.nextIcon}
             icon="arrow-alt-circle-right"
           />
-        </div> */}
-        <div className="bloc1">
-          <h2>Our Process :</h2>
         </div>
-        <div className="bloc2">
-          <div className="gallery">
-            <div className="Process">
-              <div className="title-box">
-                <h3>Initial consultation</h3>
+        <div className={styles.bloc1}></div>
+        <div className={styles.bloc2}>
+          <div className={styles.gallery}>
+            <div className={styles.Process}>
+              <div className={styles.titleBox}>
+                <h2>Initial consultation</h2>
               </div>
-              <div className="process-image-div">
+              <div>
                 <img
-                  className="slider"
+                  id="slider-1"
                   src="https://res.cloudinary.com/dyj84szrx/image/upload/v1643017480/ricky/process/Initial_consultation_lslijv.jpg"
                   alt="First meeting "
                 />
               </div>
               <div>
-                <p>STEP 1</p>
-                <p>
+                <h3>STEP 1</h3>
+                <h4>
                   Meeting with key decision-makers and stakeholders to
                   understand “what’s not working” and how this is negatively
                   affecting your business.
-                </p>
+                </h4>
               </div>
             </div>
-            <div className="Process">
-              {" "}
-              <div className="title-box">
-                <h3>Investigation of current supply chain process </h3>
+            <div className={styles.Process}>
+              <div className={styles.titleBox}>
+                <h2>Investigation of current supply chain process </h2>
               </div>
-              <div className="process-image-div">
+              <div>
                 <img
-                  className="slider"
+                  id="slider-2"
                   src="https://res.cloudinary.com/dyj84szrx/image/upload/v1643017480/ricky/process/eval2_iufhuf.jpg"
                   alt="Investigation  "
                 />
               </div>
               <div>
-                <p>STEP 2</p>
-                <p>
+                <h3>STEP 2</h3>
+                <h4>
                   Investigation of current supply chain process with different
                   departments (logistics/distribution, purchasing,
                   sales,IT,leadership, finance/accounting, etc.)
-                </p>
+                </h4>
 
-                <p>
+                <h4>
                   We learn about your current process and how it’s being
                   executed.
-                </p>
+                </h4>
               </div>
             </div>
-            <div className="Process">
-              <div className="title-box">
-                <h3>Identification and communication of solutions</h3>
+            <div className={styles.Process}>
+              <div className={styles.titleBox}>
+                <h2>Identification and communication of solutions</h2>
               </div>
-              <div className="process-image-div">
+              <div>
                 <img
-                  className="slider"
+                  id="slider-3"
                   src="https://res.cloudinary.com/dyj84szrx/image/upload/v1643017480/ricky/process/investiagtion_qouftm.jpg"
                   alt="communicate solutions meeting "
                 />
               </div>{" "}
               <div>
-                <p>STEP 3</p>
-                <p>
+                <h3>STEP 3</h3>
+                <h4>
                   Create solutions improving the supply chain to present to key
                   decision-makers for approval to implement.
-                </p>
+                </h4>
               </div>
             </div>
-            <div className="Process">
+            <div className={styles.Process}>
               {" "}
-              <div className="title-box">
-                <h3>Implementation of new solutions</h3>
+              <div className={styles.titleBox}>
+                <h2>Implementation of new solutions</h2>
               </div>
-              <div className="process-image-div">
+              <div>
                 <img
-                  className="slider"
+                  id="slider-4"
                   src="https://res.cloudinary.com/dyj84szrx/image/upload/v1643017480/ricky/process/ship_qrnjah.jpg"
                   alt="Implementation solutions "
                 />
               </div>{" "}
               <div>
-                <p>STEP 4</p>
-                <p>
+                <h3>STEP 4</h3>
+                <h4>
                   Generate a plan to implement new business solutions into daily
                   operations with minimal disruption.
-                </p>
+                </h4>
               </div>
             </div>
-            <div className="Process">
-              <div className="title-box">
-                <h3>Measure success of change</h3>
+            <div className={styles.Process}>
+              <div className={styles.titleBox}>
+                <h2>Measure success of change</h2>
               </div>
-              <div className="process-image-div">
+              <div>
                 <img
-                  className="slider"
+                  id="slider-5"
                   src="https://res.cloudinary.com/dyj84szrx/image/upload/v1643017480/ricky/process/eval_mfiscu.jpg"
                   alt="First meeting "
                 />
               </div>{" "}
               <div>
-                <p>STEP 5</p>
-                <p>Measure success of change against established benchmarks</p>
+                <h3>STEP 5</h3>
+                <h4>
+                  Measure success of change against established benchmarks
+                </h4>
               </div>
-            </div>{" "}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

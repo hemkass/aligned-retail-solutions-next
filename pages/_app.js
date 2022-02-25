@@ -4,7 +4,7 @@ import Container from "../components/Container/Container";
 function MyApp({ Component, pageProps }) {
   return (
     <Container>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </Container>
   );
 }

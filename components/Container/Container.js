@@ -1,8 +1,10 @@
+import { useRouter } from "next/router";
 import Header from "../Header/Header";
 const Container = ({ children }) => {
+  const router = useRouter();
   return (
     <>
-      <Header />
+      {router.asPath !== "/" && <Header />}
       {children}
     </>
   );

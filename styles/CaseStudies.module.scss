@@ -1,0 +1,47 @@
+@import "./variables.scss";
+.caseStudies {
+  overflow-y: visible;
+
+  .title {
+    margin-top: 50px;
+    padding-left: 50px;
+    margin-bottom: 50px;
+  }
+
+  .bloc2 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 80%;
+  }
+
+  .cardbox {
+    border: 1px dotted $color1;
+    box-shadow: 1px 1px 45px 1px $color1Trans;
+    width: 350px;
+    height: max-content;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    /* border: 1px double var(--grey1); */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .imgBox {
+      height: max-content;
+      width: 100%;
+    }
+
+    Image {
+      height: 300px;
+      width: 100%;
+    }
+
+    h6 {
+      padding: 0;
+      font-size: 1em;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+  }
+}

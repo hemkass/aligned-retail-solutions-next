@@ -1,16 +1,60 @@
-body {
-  width: 99vw;
+@import "./variables.scss";
 
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+html {
+  height: 99vh;
+  width: 99vw;
+  scroll-behavior: smooth;
+}
+
+Image body {
+  height: 98vh;
+  width: 100%;
+  /* overflow-y: hidden;  */
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+  font-size: 72px;
+  line-height: 80px;
+  color: $black;
+}
+
+h2 {
+  font-family: "Cinzel", serif;
+}
+
+h3 {
+  font-family: "Prompt", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h5 {
+  font-family: "Prompt", sans-serif;
+
+  font-size: 18px;
+  line-height: 24px;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 1.7;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+h6 {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
 }
 
 img {
   width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 a {

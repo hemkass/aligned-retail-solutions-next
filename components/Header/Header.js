@@ -1,16 +1,29 @@
 import Menu from "./Menu";
+
 import { useRouter } from "next/router";
 
 import styles from "../Header/Header.module.scss";
 
-const Header = ({ handleScroll }) => {
+import { useEffect, useState } from "react";
+
+const Header = () => {
   const router = useRouter();
+  const [_document, set_document] = useState(null);
+  useEffect(() => {
+    set_document(document);
+  }, []);
+
   const handleScrollUp = (elem) => {
-    router.push("/");
-    if (document.getElementById(`div-${elem}`)) {
-      document
-        .getElementById(`div-${elem}`)
-        .scrollIntoView({ behavior: "smooth" });
+    if (router.asPath !== "/") {
+      router.push("/");
+    } else {
+      if (_document) {
+        if (_document.getElementById(`div-menu-1`)) {
+          _document
+            .getElementById(`div-menu-1`)
+            .scrollIntoView({ behavior: "smooth" });
+        }
+      }
     }
   };
 
@@ -19,7 +32,6 @@ const Header = ({ handleScroll }) => {
       <div
         id="menu-1"
         onClick={(event) => {
-          /*    console.log("hello", event); */
           handleScrollUp(event.target.id);
         }}
         className={styles.logo}
@@ -29,8 +41,8 @@ const Header = ({ handleScroll }) => {
           alt="logo de Aligned retail solutions"
         />
       </div>
-      {/*  {location.pathname === "/" && */}{" "}
-      <Menu handleScroll={handleScroll} />
+
+      <Menu />
     </div>
   );
 };

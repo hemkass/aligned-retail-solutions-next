@@ -1,46 +1,65 @@
 @import "./styles/variables.scss";
 
+
+@media (min-width: 0px) and (max-width:1300px) {
+ .menuContactDiv {
+  
+    border: 3px double red;
+      h2 {  font-weight: 500;
+ 
+    color: red;
+  
+
+  }
+}}
+
 .header {
  position: -webkit-sticky;
-position: sticky;
+position: sticky; z-index: 20;
 top: 0px;
-  height: 10vh;
-  width: 100vw;
+  height: 8vh;
+  width: 100%;
  background-color:$white;
-  padding-left: 50px;
-  padding-top:15px;
+  padding-left: 2vw;
+ 
   display: flex;
   align-items:center;
   gap: 50px;
 
+
+
   div {
     height: max-content;
-   margin: auto 0 auto 0; 
+    margin: auto 0 auto 0;  
     font-family: "Maitree", serif;
     font-weight: 400;
     line-height: 1.2;
     font-size: 1.1em;
   }
   .logo {
-    width: 8%;
-    img {object-fit:scale;}
+  width: 7%;
+  min-width:70px;
+ 
+    img {object-fit:cover;}
   }
 
   .MenuDiv {
     display: flex;
     gap: 20px;
+ height:max-content;
 
     h2 {
     font-family: "Maitree", serif;
-  font-size:20px;font-weight:100; line-height:10px;}
+  font-size:1em;font-weight:100; line-height:1em;}
 
   }
 
 
   .link {
     text-decoration: none;
-    color: black;
+    font-size:20px;font-weight:100; line-height:10px;color:red;
   }
+
   .menuContactDiv {height:max-content;
    padding: 0px 10px 0px 10px; 
     border: 3px double $color1;
@@ -50,6 +69,8 @@ top: 0px;
   
 
   }
+
+  
   
 
   }
