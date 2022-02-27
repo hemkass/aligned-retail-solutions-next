@@ -11,10 +11,10 @@ const YourResults = () => {
           <div className={styles.imgBox}>
             <Image
               src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645606694/ricky/result/savingpetit_mpqbcl.jpg"
+              alt="saving money illustration"
               width="9"
               height="11"
               layout="responsive"
-              alt="saving money illustration"
             ></Image>
           </div>
           <div>
@@ -65,10 +65,13 @@ const YourResults = () => {
         </div>
         <div className={styles.cardBox}>
           <div className={styles.imgBox}>
-            <img
+            <Image
               src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645606694/ricky/result/plan_roumu3.jpg"
               alt="process"
-            ></img>
+              width="9"
+              height="11"
+              layout="responsive"
+            ></Image>
           </div>
           <div>
             <h2>More Order Process Efficient Internal</h2>

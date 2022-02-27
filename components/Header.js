@@ -2,7 +2,7 @@ import Menu from "./Menu";
 
 import { useRouter } from "next/router";
 
-import styles from "../Header/Header.module.scss";
+import styles from "../styles/Nav.module.scss";
 
 import { useEffect, useState } from "react";
 

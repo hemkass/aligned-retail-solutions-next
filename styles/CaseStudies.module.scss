@@ -2,8 +2,11 @@
 .caseStudies {
   overflow-y: visible;
 
+  @media (max-width: $layout-breakpoint-small) {
+    padding-top: 5%;
+  }
   .title {
-    margin-top: 50px;
+    margin-top: 5%;
     padding-left: 50px;
     margin-bottom: 50px;
   }

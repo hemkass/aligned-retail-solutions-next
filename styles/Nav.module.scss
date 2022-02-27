@@ -1,0 +1,93 @@
+@import "./variables.scss";
+
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  z-index: 150;
+  background-color: $color2;
+  width: 100vw;
+  height: 7vh;
+  gap: 3%;
+
+  .logo {
+    padding: 5px;
+    height: 100%;
+    @media (max-width: $layout-breakpoint-small) {
+      display: none;
+    }
+  }
+
+  .menuDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+
+    h2 {
+      /* font-family: "Raleway", sans-serif; */
+      font-family: "Prompt", sans-serif;
+      font-weight: 400;
+      font-size: 1.2em;
+      line-height: 1;
+      color: $black;
+    }
+  }
+
+  .menuContactDiv {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    @media (max-width: $layout-breakpoint-small) {
+      display: none;
+    }
+
+    h2 {
+      font-size: 1em;
+      font-family: "Cinzel", serif;
+      border: 3px double $color1;
+      padding: 10px;
+      font-weight: 800;
+      color: $color1;
+    }
+  }
+  .otherMenu {
+    display: none;
+
+    @media (max-width: $layout-breakpoint-small) {
+      display: block;
+
+      width: 100%;
+
+      .mobileLogo {
+        width: 20%;
+      }
+    }
+  }
+
+  .MobileCaseStudies {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: 3%;
+
+    .contact {
+      height: 100%;
+      h2 {
+        font-size: 1em;
+        font-family: "Cinzel", serif;
+        border: 3px double $color1;
+        padding: 10px;
+        font-weight: 800;
+        color: $color1;
+      }
+    }
+
+    @media (max-width: $layout-breakpoint-small) {
+      .mobileLogo {
+        width: 20%;
+      }
+    }
+  }
+}

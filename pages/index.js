@@ -1,12 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 
-import Header from "../components/Header/Header";
+import Header from "../components/Header";
 import Accueil from "../components/Accueil";
 import Expertise from "../components/Expertise";
 import YourResults from "../components/Results";
 import Process from "../components/Process";
 import About from "../components/About";
+import Ricky from "../components/Ricky";
 
 import styles from "../styles/Home.module.scss";
 
@@ -54,6 +55,9 @@ export default function Home() {
         </div>
         <div id="div-menu-5" className={styles.about}>
           <About />
+        </div>
+        <div id="div-menu-6" className={styles.ricky}>
+          <Ricky />
         </div>
       </div>
     </>

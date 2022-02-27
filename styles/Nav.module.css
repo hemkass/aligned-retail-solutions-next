@@ -1,0 +1,15 @@
+.header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 150;
+}
+
+.header .menuDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: aquamarine;
+}
+/*# sourceMappingURL=Nav.module.css.map */

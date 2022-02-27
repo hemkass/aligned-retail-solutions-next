@@ -77,11 +77,14 @@ const Process = () => {
               <div className={styles.titleBox}>
                 <h2>Initial consultation</h2>
               </div>
-              <div>
-                <img
+              <div className={styles.imgDiv}>
+                <Image
                   id="slider-1"
                   src="https://res.cloudinary.com/dyj84szrx/image/upload/v1643017480/ricky/process/Initial_consultation_lslijv.jpg"
                   alt="First meeting "
+                  layout="responsive"
+                  width="16"
+                  height="6"
                 />
               </div>
               <div>
@@ -97,11 +100,14 @@ const Process = () => {
               <div className={styles.titleBox}>
                 <h2>Investigation of current supply chain process </h2>
               </div>
-              <div>
-                <img
+              <div className={styles.imgDiv}>
+                <Image
                   id="slider-2"
                   src="https://res.cloudinary.com/dyj84szrx/image/upload/v1643017480/ricky/process/eval2_iufhuf.jpg"
                   alt="Investigation  "
+                  layout="responsive"
+                  width="16"
+                  height="6"
                 />
               </div>
               <div>
@@ -122,11 +128,14 @@ const Process = () => {
               <div className={styles.titleBox}>
                 <h2>Identification and communication of solutions</h2>
               </div>
-              <div>
-                <img
+              <div className={styles.imgDiv}>
+                <Image
                   id="slider-3"
                   src="https://res.cloudinary.com/dyj84szrx/image/upload/v1643017480/ricky/process/investiagtion_qouftm.jpg"
                   alt="communicate solutions meeting "
+                  layout="responsive"
+                  width="16"
+                  height="6"
                 />
               </div>{" "}
               <div>
@@ -138,12 +147,14 @@ const Process = () => {
               </div>
             </div>
             <div className={styles.Process}>
-              {" "}
               <div className={styles.titleBox}>
                 <h2>Implementation of new solutions</h2>
               </div>
-              <div>
-                <img
+              <div className={styles.imgDiv}>
+                <Image
+                  layout="responsive"
+                  width="16"
+                  height="6"
                   id="slider-4"
                   src="https://res.cloudinary.com/dyj84szrx/image/upload/v1643017480/ricky/process/ship_qrnjah.jpg"
                   alt="Implementation solutions "
@@ -161,11 +172,14 @@ const Process = () => {
               <div className={styles.titleBox}>
                 <h2>Measure success of change</h2>
               </div>
-              <div>
-                <img
+              <div className={styles.imgDiv}>
+                <Image
                   id="slider-5"
                   src="https://res.cloudinary.com/dyj84szrx/image/upload/v1643017480/ricky/process/eval_mfiscu.jpg"
                   alt="First meeting "
+                  layout="responsive"
+                  width="16"
+                  height="6"
                 />
               </div>{" "}
               <div>
