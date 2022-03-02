@@ -83,9 +83,8 @@ const Menu = () => {
         <div className={styles.menuDiv}>
           <div className={styles.otherMenu}>
             <div className={styles.mobileLogo}>
-              {" "}
               <Link href="/" className={styles.link}>
-                <Image
+                <img
                   src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645263529/ricky/logo_rqi7xe.png"
                   alt="logo de Aligned retail solutions"
                   layout="responsive"
@@ -98,11 +97,9 @@ const Menu = () => {
         </div>
       ) : (
         <div className={styles.MobileCaseStudies}>
-          {" "}
           <div className={styles.mobileLogo}>
-            {" "}
             <Link href="/" className={styles.link}>
-              <Image
+              <img
                 src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645263529/ricky/logo_rqi7xe.png"
                 alt="logo de Aligned retail solutions"
                 layout="responsive"

@@ -7,7 +7,7 @@
   z-index: 150;
   background-color: $color2;
   width: 100vw;
-  height: 7vh;
+  height: 10vh;
   gap: 3%;
 
   .logo {
@@ -52,6 +52,14 @@
       color: $color1;
     }
   }
+
+  .mobileLogo {
+    display: none;
+    @media (max-width: $layout-breakpoint-small) {
+      display: flex;
+      width: 20%;
+    }
+  }
   .otherMenu {
     display: none;
 
@@ -59,10 +67,6 @@
       display: block;
 
       width: 100%;
-
-      .mobileLogo {
-        width: 20%;
-      }
     }
   }
 

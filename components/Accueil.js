@@ -15,7 +15,8 @@ const Accueil = () => {
         <div className={styles.BackgroundImage}>
           <Image
             className={styles.background}
-            src="https://res.cloudinary.com/dyj84szrx/image/upload/v1642417376/ricky/fatigu%C3%A92_xx7mr4.jpg"
+            /* src="https://res.cloudinary.com/dyj84szrx/image/upload/v1642417376/ricky/fatigu%C3%A92_xx7mr4.jpg" */
+            src="https://res.cloudinary.com/dyj84szrx/image/upload/v1646236987/ricky/help_tuswrm.jpg"
             alt=""
             layout="fill"
           />

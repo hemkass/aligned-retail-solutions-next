@@ -4,7 +4,8 @@
     "title": "Global Manufacturer of Electronic Consumer Goods – (Retail Distribution, Project Management) – USA",
     "description": "Coordinate simultaneous delivery of Marketing Displays to over 1,000 retail locations in less than a week.",
 
-    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645606707/ricky/studies%20case/camionnage_qvk8fm.jpg"
+    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645606707/ricky/studies%20case/camionnage_qvk8fm.jpg",
+    "alt": "trucks simultaneous delivery"
   },
 
   {
@@ -12,55 +13,64 @@
     "title": "Global Manufacturer of Electronic Consumer Goods – Retail Distribution, Distribution Network Analysis – USA",
     "description": "Re-engineered order process for Domestic LTL and Truckload Shipments in the U.S. to create over $1 million in annual cost savings.",
 
-    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645606706/ricky/studies%20case/convoicamion_pvzqe4.jpg"
+    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645606706/ricky/studies%20case/convoicamion_pvzqe4.jpg",
+    "alt": "Truckload Shipments on a parking"
   },
   {
     "ID": 3,
     "title": "Public Electric Utility – Midwest USA",
     "description": "Cost avoidance of $500,000 by proactively creating a unique handling process for 400 containers of bulk loaded steel structures",
 
-    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645606707/ricky/studies%20case/stockage_v6du3s.jpg"
+    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645606707/ricky/studies%20case/stockage_v6du3s.jpg",
+    "alt": "process for 400 containers"
   },
+
   {
     "ID": 4,
     "title": "Global Craft Beer Distributor – (USA, France, Italy and Netherlands)",
     "description": "Set up refrigerated supply chain and distribution network for multiple American craft beverage producers to distribute 500,000 pints to thirsty European consumers!",
 
-    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645606706/ricky/studies%20case/biereprocess_qw7cwg.jpg"
+    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645606706/ricky/studies%20case/biereprocess_qw7cwg.jpg",
+    "alt": "refrigerated supply chain (Craft beer)"
   },
   {
     "ID": 5,
     "title": "Sporting Goods Manufacturer (Direct-to-Consumer) – France and USA",
     "description": "Set up North American E-commerce distribution for a European sporting goods company who moved their headquarters to Florida to deliver thousands of training devices to customers in the USA and Canada.",
 
-    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645782656/ricky/studies%20case/sport_lmhngy.jpg"
+    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645782656/ricky/studies%20case/sport_lmhngy.jpg",
+    "alt": "a man on a trainning device"
   },
   {
     "ID": 6,
     "title": "Consumer Products Manufacturer - USA",
     "description": "Implemented a new and improved order-to-cash process to improve cash flow, save $500,000 in freight costs and eliminate $100,000 in retail chargebacks.",
 
-    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645782011/ricky/studies%20case/order-to-cash_s5zov4.jpg"
+    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645782011/ricky/studies%20case/order-to-cash_s5zov4.jpg",
+    "alt": "order-to-cash: illustration with a computer and a cart"
   },
   {
     "ID": 7,
     "title": "Frozen Food Manufacturer - USA",
     "description": "Implemented cloud-based technology solution and rewrote order process to convert pallet orders into truckload deliveries saving over $2 million annually in freight costs and reduced retail penalties.  Improved on-time delivery to over 98%.",
 
-    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645606709/ricky/studies%20case/convoi_lnv2mt.jpg"
+    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645606709/ricky/studies%20case/convoi_lnv2mt.jpg",
+    "alt": "truckload deliveries "
   },
   {
     "ID": 8,
     "title": "Pet Toy and Accessory Manufacturer - USA",
     "description": "Improved on-time delivery to over 97% and saved over $1 million in freight costs annually by doing an LTL freight bid and choosing better carrier partners as suppliers.",
 
-    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645606706/ricky/studies%20case/ontime_n7bnwn.jpg"
+    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645606706/ricky/studies%20case/ontime_n7bnwn.jpg",
+    "alt": "Delivery always on time, written on a delivery truck "
   },
   {
     "ID": 9,
     "title": "Automobile Parts Manufacturer (Brake Pads) - Italy",
     "description": "Streamlined inbound logistics delivery of raw materials and machinery parts from around the world to save €1 million per year in raw materials procurement budget.",
 
-    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645606706/ricky/studies%20case/appro_iexq9d.jpg"
+    "Picture": "https://res.cloudinary.com/dyj84szrx/image/upload/v1645606706/ricky/studies%20case/appro_iexq9d.jpg",
+    "alt": "delivery of raw materials: Delivery of a big machinery  "
   }
 ]
