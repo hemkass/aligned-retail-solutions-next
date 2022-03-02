@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import styles from "../styles/Nav.module.scss";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Header = () => {
   const router = useRouter();
@@ -36,9 +37,11 @@ const Header = () => {
         }}
         className={styles.logo}
       >
-        <img
+        <Image
           src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645263529/ricky/logo_rqi7xe.png"
           alt="logo de Aligned retail solutions"
+          width="160"
+          height="70"
         />
       </div>
 

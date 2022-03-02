@@ -85,7 +85,7 @@ const Accueil = () => {
           </div>
         </div>
         <div className={styles.contactText}>
-          <Link href="/contact" className={styles.link}>
+          <Link href="/contact" className={styles.link} passHref>
             <h2>Speak to a supply chain expert</h2>
           </Link>
         </div>

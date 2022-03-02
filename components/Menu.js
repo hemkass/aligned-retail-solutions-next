@@ -58,7 +58,7 @@ const Menu = () => {
             </h2>{" "}
           </div>
           <div>
-            <Link href="/case-studies" className={styles.link}>
+            <Link href="/case-studies" className={styles.link} passHref>
               <h2>Case Studies</h2>
             </Link>
           </div>
@@ -74,7 +74,7 @@ const Menu = () => {
           </div>
 
           <div className={styles.menuContactDiv}>
-            <Link href="/contact">
+            <Link href="/contact" passHref>
               <h2>Speak to a supply chain expert </h2>
             </Link>
           </div>
@@ -83,14 +83,16 @@ const Menu = () => {
         <div className={styles.menuDiv}>
           <div className={styles.otherMenu}>
             <div className={styles.mobileLogo}>
-              <Link href="/" className={styles.link}>
-                <img
-                  src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645263529/ricky/logo_rqi7xe.png"
-                  alt="logo de Aligned retail solutions"
-                  layout="responsive"
-                  width="16"
-                  height="9"
-                />
+              <Link href="/" passHref className={styles.link}>
+                <a>
+                  <Image
+                    src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645263529/ricky/logo_rqi7xe.png"
+                    alt="logo de Aligned retail solutions"
+                    layout="responsive"
+                    width="16"
+                    height="9"
+                  />
+                </a>
               </Link>
             </div>
           </div>
@@ -98,18 +100,20 @@ const Menu = () => {
       ) : (
         <div className={styles.MobileCaseStudies}>
           <div className={styles.mobileLogo}>
-            <Link href="/" className={styles.link}>
-              <img
-                src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645263529/ricky/logo_rqi7xe.png"
-                alt="logo de Aligned retail solutions"
-                layout="responsive"
-                width="16"
-                height="9"
-              />
+            <Link href="/" className={styles.link} passHref>
+              <a>
+                <Image
+                  src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645263529/ricky/logo_rqi7xe.png"
+                  alt="logo de Aligned retail solutions"
+                  layout="responsive"
+                  width="16"
+                  height="9"
+                />
+              </a>
             </Link>
           </div>
           <div className={styles.contact}>
-            <Link href="/contact" className={styles.link}>
+            <Link href="/contact" className={styles.link} passHref>
               <h2> Speak to a supply chain expert</h2>
             </Link>
           </div>
