@@ -12,7 +12,7 @@ const Contact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const response = await axios.post(
-      "https://m-c-portfolio-back.herokuapp.com/form",
+      "https://alignedretailsolutions-back.herokuapp.com/form",
       {
         email: `${email}`,
         firstname: `${firstname}`,
