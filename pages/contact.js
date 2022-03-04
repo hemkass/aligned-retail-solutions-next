@@ -9,6 +9,24 @@ const Contact = () => {
   const [tel, setTel] = useState("");
   const [mess, setMess] = useState("");
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const response = await axios.post(
+      "https://m-c-portfolio-back.herokuapp.com/form",
+      {
+        email: `${email}`,
+        firstname: `${firstname}`,
+        lastname: `${lastname}`,
+        telephone: `${tel}`,
+        message: `${mess}`,
+      }
+    );
+    console.log(response.status);
+    if (response.status === 200) {
+      setResponse(true);
+    }
+  };
+
   return (
     <>
       <Head>
@@ -20,7 +38,7 @@ const Contact = () => {
         <div className={styles.formLeft}>
           <h1>NEED HELP WITH YOUR SUPPLY CHAIN?</h1>{" "}
         </div>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className={styles.dataDiv}>
             <input
               onChange={(event) => setFirstname(event.target.value)}
