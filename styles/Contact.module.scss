@@ -13,6 +13,25 @@
     gap: 10px;
   }
 
+  .response {
+    border: dashed thin $grey1;
+    padding: 30px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      text-align: center;
+      width: max-content;
+      font-family: "Prompt", sans-serif;
+      font-weight: 300;
+      line-height: 1;
+      font-size: 1.2em;
+      font-style: italic;
+    }
+  }
+
   .formLeft {
     padding-left: 20%;
     display: flex;
@@ -41,7 +60,7 @@
 
     .dataDiv {
       display: flex;
-      gap: 50px;
+      gap: 70px;
 
       @media (max-width: $layout-breakpoint-small) {
         flex-direction: column;
