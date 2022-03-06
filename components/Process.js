@@ -70,7 +70,7 @@ const Process = () => {
             icon="arrow-alt-circle-right"
           />
         </div>
-        <div className={styles.bloc1}></div>
+
         <div className={styles.bloc2}>
           <div className={styles.gallery}>
             <div className={styles.Process}>

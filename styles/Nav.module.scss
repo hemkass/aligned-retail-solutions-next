@@ -1,6 +1,7 @@
 @import "./variables.scss";
 
 .header {
+  cursor: pointer;
   position: fixed;
   top: 0;
   display: flex;
@@ -23,6 +24,7 @@
     display: flex;
     align-items: center;
     gap: 3%;
+    cursor: pointer;
 
     h2 {
       /* font-family: "Raleway", sans-serif; */

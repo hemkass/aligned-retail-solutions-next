@@ -345,7 +345,7 @@
   align-items: flex-start;
   gap: 15vh;
 
-  @media (max-width: $layout-breakpoint-small) {
+  @media (max-width: $layout-breakpoint-medium) {
     padding: 0;
     align-items: center;
     gap: 10px;
@@ -358,7 +358,7 @@
     color: $color2;
     font-weight: 500;
 
-    @media (max-width: $layout-breakpoint-small) {
+    @media (max-width: $layout-breakpoint-medium) {
       padding-top: 50px;
       text-align: center;
     }
@@ -377,19 +377,21 @@
     gap: 100px;
     height: max-content;
 
-    @media (max-width: $layout-breakpoint-small) {
+    @media (max-width: $layout-breakpoint-medium) {
       flex-wrap: wrap;
-
+      height: 100vh;
       padding: 3px;
-      gap: 50px;
+      gap: 10%;
     }
 
     .cardBox {
       width: 20%;
       gap: 0;
 
-      @media (max-width: $layout-breakpoint-small) {
+      @media (max-width: $layout-breakpoint-medium) {
         width: 23%;
+        background-color: aqua;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -398,11 +400,11 @@
       .imgBox {
         height: 30vh;
         object-fit: cover;
-        @media (max-width: $layout-breakpoint-small) {
+        @media (max-width: $layout-breakpoint-medium) {
           height: max-content;
         }
       }
-      img {
+      Image {
         z-index: 20;
         border-radius: 10px;
       }
@@ -414,7 +416,7 @@
         color: $color1;
         font-family: "Prompt", sans-serif;
 
-        @media (max-width: $layout-breakpoint-small) {
+        @media (max-width: $layout-breakpoint-medium) {
           font-size: 1em;
           line-height: 1.4em;
           font-weight: 500;
@@ -431,7 +433,7 @@
     left: 0;
     background: $color1;
 
-    @media (max-width: $layout-breakpoint-small) {
+    @media (max-width: $layout-breakpoint-medium) {
       background: $color1;
     }
   }
@@ -448,8 +450,8 @@
     transform: skewY(9deg) translateY(-30vh);
     transform-origin: top right;
 
-    @media (max-width: $layout-breakpoint-small) {
-      background: $color3;
+    @media (max-width: $layout-breakpoint-medium) {
+      background: $color1;
       top: 0;
       height: 70%;
     }
@@ -496,7 +498,7 @@
     }
 
     .prevIcon {
-      left: 20%;
+      left: 10%;
     }
 
     .bloc1 {
@@ -512,51 +514,59 @@
       }
     }
 
+    p {
+      color: $color2;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 2em;
+      font-weight: 600;
+      color: whitesmoke;
+
+      @media (max-width: $layout-breakpoint-small) {
+        font-size: 1.5em;
+        line-height: 1.2em;
+      }
+    }
+
+    h3 {
+      color: whitesmoke;
+    }
+
+    h4 {
+      font-weight: 200;
+      color: whitesmoke;
+    }
+
     .bloc2 {
+      width: 100%;
+
       height: 100%;
       color: $color3;
       display: flex;
+      justify-content: center;
       /* overflow: scroll; */
       overflow: hidden;
       gap: 100px;
+
+      overflow-y: hidden;
+      overflow-x: scroll;
+      overflow-x: hidden;
+      /* scroll-snap-type: y mandatory; */
 
       @media (max-width: $layout-breakpoint-small) {
         overflow-x: scroll;
         gap: 50px;
       }
 
-      p {
-        color: $color2;
-        margin-bottom: 15px;
-      }
-
-      h2 {
-        font-size: 2em;
-        font-weight: 600;
-        color: whitesmoke;
-
-        @media (max-width: $layout-breakpoint-small) {
-          font-size: 1.5em;
-          line-height: 1.2em;
-        }
-      }
-
-      h3 {
-        color: whitesmoke;
-      }
-
-      h4 {
-        font-weight: 200;
-        color: whitesmoke;
-      }
-
       .gallery {
-        display: flex;
+        width: 60vw;
 
         .Process {
-          width: 65vw;
+          width: 100%;
           height: 100%;
-          justify-content: center;
+
           /*  background-color: var(--color2); */
           margin-left: 3%;
           /* border: 1px double var(--grey1); */
@@ -564,6 +574,9 @@
           display: flex;
           flex-direction: column;
           gap: 20px;
+          overflow-x: hidden;
+          overflow-y: hidden;
+          scroll-snap-align: center;
 
           @media (max-width: $layout-breakpoint-small) {
             width: 90vw;
