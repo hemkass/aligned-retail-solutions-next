@@ -374,12 +374,12 @@
     padding: 0 50px 0 50px;
     z-index: 20;
     display: flex;
-    gap: 100px;
+    gap: 50px;
     height: max-content;
 
     @media (max-width: $layout-breakpoint-medium) {
       flex-wrap: wrap;
-      height: 100vh;
+      height: 70vh;
       padding: 3px;
       gap: 10%;
     }
@@ -406,6 +406,15 @@
       Image {
         z-index: 20;
         border-radius: 10px;
+      }
+
+      .imgCardBox {
+        z-index: 20;
+        border-radius: 10px;
+
+        @media (max-width: $layout-breakpoint-medium) {
+          height: 3vh;
+        }
       }
 
       h2 {

@@ -10,6 +10,7 @@ const YourResults = () => {
         <div className={styles.cardBox}>
           <div className={styles.imgBox}>
             <Image
+              className={styles.imgCardBox}
               src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645606694/ricky/result/savingpetit_mpqbcl.jpg"
               alt="saving money illustration"
               width="9"
@@ -66,6 +67,7 @@ const YourResults = () => {
         <div className={styles.cardBox}>
           <div className={styles.imgBox}>
             <Image
+              className={styles.imgCardBox}
               src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645606694/ricky/result/plan_roumu3.jpg"
               alt="process"
               width="9"
