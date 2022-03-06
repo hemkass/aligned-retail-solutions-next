@@ -14,7 +14,7 @@ const YourResults = () => {
               src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645606694/ricky/result/savingpetit_mpqbcl.jpg"
               alt="saving money illustration"
               width="9"
-              height="7vh"
+              height="5vh"
               layout="responsive"
             ></Image>
           </div>
@@ -25,10 +25,11 @@ const YourResults = () => {
         <div className={styles.cardBox}>
           <div className={styles.imgBox}>
             <Image
+              className={styles.imgBox}
               src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645606706/ricky/studies%20case/ontime_n7bnwn.jpg"
               alt="delivery on-time illustration"
               width="9"
-              height="7vh"
+              height="5vh"
               layout="responsive"
             ></Image>
           </div>
@@ -39,10 +40,11 @@ const YourResults = () => {
         <div className={styles.cardBox}>
           <div className={styles.imgBox}>
             <Image
+              className={styles.imgBox}
               src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645606695/ricky/result/entrepot_n7uemv.jpg"
               alt="warehouse"
               width="9"
-              height="7vh"
+              height="5vh"
               layout="responsive"
             ></Image>
           </div>
@@ -53,10 +55,11 @@ const YourResults = () => {
         <div className={styles.cardBox}>
           <div className={styles.imgBox}>
             <Image
+              className={styles.imgBox}
               src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645606694/ricky/result/cargopetit_cxk5rr.jpg"
               alt="cargo"
               width="9"
-              height="7vh"
+              height="5vh"
               layout="responsive"
             ></Image>
           </div>
@@ -71,7 +74,7 @@ const YourResults = () => {
               src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645606694/ricky/result/plan_roumu3.jpg"
               alt="process"
               width="9"
-              height="7vh"
+              height="5vh"
               layout="responsive"
             ></Image>
           </div>
