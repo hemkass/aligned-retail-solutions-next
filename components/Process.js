@@ -56,7 +56,7 @@ const Process = () => {
 
   return (
     <>
-      <h1>Our Process :</h1>
+      <h1>The Process :</h1>
       <div className={styles.bloc}>
         <div onClick={handlePrev}>
           <FontAwesomeIcon
@@ -114,8 +114,8 @@ const Process = () => {
                 <h3>STEP 2</h3>
                 <h4>
                   Investigation of current supply chain process with different
-                  departments (logistics/distribution, purchasing,
-                  sales,IT,leadership, finance/accounting, etc.)
+                  departments (logistics/distribution, purchasing, sales, IT,
+                  leadership, finance/accounting, etc.)
                 </h4>
 
                 <h4>
@@ -126,7 +126,7 @@ const Process = () => {
             </div>
             <div className={styles.Process}>
               <div className={styles.titleBox}>
-                <h2>Identification and communication of solutions</h2>
+                <h2>communication the solution</h2>
               </div>
               <div className={styles.imgDiv}>
                 <Image

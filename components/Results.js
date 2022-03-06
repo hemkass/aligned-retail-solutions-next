@@ -18,7 +18,7 @@ const YourResults = () => {
             ></Image>
           </div>
           <div>
-            <h2>Eliminate Retail Chargebacks,Fines & Penalties</h2>
+            <h2>Eliminate Retail Chargebacks, Fines & Penalties</h2>
           </div>
         </div>
         <div className={styles.cardBox}>
@@ -74,7 +74,7 @@ const YourResults = () => {
             ></Image>
           </div>
           <div>
-            <h2>More Order Process Efficient Internal</h2>
+            <h2> A More Efficient Order Internal Process </h2>
           </div>
         </div>
         ▪
