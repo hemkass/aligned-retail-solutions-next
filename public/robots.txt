@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://alignedretailsolutions.com/
+
+# Sitemaps
+Sitemap: https://alignedretailsolutions.com/sitemap.xml
