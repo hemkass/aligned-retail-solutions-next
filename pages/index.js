@@ -33,7 +33,7 @@ export default function Home() {
       <Head>
         <meta
           name="google-site-verification"
-          content="X1MonspyHkRZCzIO2aMR8hEFU_mUFCHHXBZukpU53N0"
+          content="uuugeK8Yo-1u8FLl0rIY6Iz6ROe8AsjwIBMF_UKZkmk"
         />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
