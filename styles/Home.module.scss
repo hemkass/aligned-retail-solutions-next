@@ -7,7 +7,7 @@
 
 .homeContainer {
   height: 98vh;
-  width: 99vw;
+  width: 100vw;
   overflow-y: scroll;
   overflow-x: hidden;
 
@@ -50,6 +50,10 @@
     height: 100%;
     object-fit: cover;
 
+    @media (max-width: $layout-breakpoint-small) {
+      height: 50%;
+    }
+
     .Title {
       display: flex;
       align-items: center;
@@ -87,6 +91,10 @@
     top: 0;
     left: 0;
     height: 70%;
+
+    @media (max-width: $layout-breakpoint-small) {
+      height: 50%;
+    }
 
     &:after {
       content: " ";
@@ -206,22 +214,24 @@
       width: 30%;
 
       @media (max-width: $layout-breakpoint-small) {
-        width: 100%;
+        width: 80%;
+        margin-top: 2vh;
 
         h2 {
           font-size: 1em;
         }
       }
-    }
-    .contactLink {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: $color2;
-      padding: 15px 20px 15px 20px;
+      .contactLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color2;
+        padding: 15px 20px 15px 20px;
 
-      border: solid thin $grey1;
-      font-weight: 400;
+        border: solid thin $grey1;
+
+        font-weight: 400;
+      }
     }
 
     h2 {
@@ -230,6 +240,10 @@
       text-align: center;
       border: solid thin $grey1;
       font-weight: 400;
+
+      @media (max-width: $layout-breakpoint-small) {
+        padding: 3px;
+      }
     }
   }
 }
@@ -349,6 +363,7 @@
     padding: 0;
     align-items: center;
     gap: 10px;
+    width: 100vw;
   }
 
   h1 {
@@ -486,6 +501,10 @@
     padding-left: 3%;
     padding-bottom: 3%;
 
+    @media (max-width: $layout-breakpoint-small) {
+      display: flex;
+    }
+
     .nextIcon,
     .prevIcon {
       top: 45%;
@@ -545,6 +564,11 @@
     h4 {
       font-weight: 200;
       color: whitesmoke;
+
+      @media (max-width: $layout-breakpoint-small) {
+        font-size: 0.9em;
+        line-height: 1.4em;
+      }
     }
 
     .bloc2 {
@@ -564,12 +588,20 @@
       /* scroll-snap-type: y mandatory; */
 
       @media (max-width: $layout-breakpoint-small) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
         overflow-x: scroll;
         gap: 50px;
+        width: 100vw;
       }
 
       .gallery {
         width: 60vw;
+        @media (max-width: $layout-breakpoint-small) {
+          display: flex;
+          width: max-content;
+        }
 
         .Process {
           width: 100%;
@@ -587,8 +619,10 @@
           scroll-snap-align: center;
 
           @media (max-width: $layout-breakpoint-small) {
-            width: 90vw;
+            width: 80vw;
+            height: 100%;
             padding: 0;
+            scroll-snap-align: start;
           }
 
           .titleBox {
@@ -616,6 +650,7 @@
 
 .about {
   background-color: $color2;
+  width: 100vw;
 
   .skewed {
     opacity: 1;
@@ -647,9 +682,9 @@
     width: 95%;
     height: 100%;
     @media (max-width: $layout-breakpoint-small) {
-      flex-direction: column;
-
-      overflow-x: hidden;
+      word-wrap: break-word;
+      padding: 3%;
+      width: 100%;
       height: max-content;
     }
 
@@ -662,6 +697,7 @@
 
         @media (max-width: $layout-breakpoint-small) {
           font-size: 2.5em;
+          word-wrap: break-word;
           line-height: 1.1em;
         }
       }
@@ -687,7 +723,10 @@
       @media (max-width: $layout-breakpoint-small) {
         padding-top: 0;
         height: max-content;
-        width: 90%;
+        height: 100%;
+
+        justify-content: center;
+        align-items: center;
       }
     }
 
@@ -801,12 +840,22 @@
 
       .descBox {
         color: $color1;
-        display: flex;
+
         flex-direction: column;
+        overflow-y: scroll;
         width: 95%;
+
+        h4 {
+          font-size: 1em;
+        }
 
         h5 {
           font-weight: 200;
+        }
+
+        a {
+          line-height: 0.8;
+          padding: 0;
         }
 
         div {

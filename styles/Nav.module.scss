@@ -11,6 +11,10 @@
   height: 10vh;
   gap: 3%;
 
+  @media (max-width: $layout-breakpoint-small) {
+    overflow-y: scroll;
+  }
+
   .logo {
     padding: 5px;
     height: 100%;
